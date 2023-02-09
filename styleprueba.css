@@ -78,7 +78,9 @@
     transition: transform .2s;
     margin: 5 auto;
   }
-
+#Titulo{
+text-align: center;
+}
   .Descripcion
   {
     margin: 20px;
