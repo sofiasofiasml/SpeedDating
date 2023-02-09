@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Sofia MARLOP</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="styleprueba.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <header>
+    <div class="home">
+        <a href="clase3.html">
+            <img src="./img/icon.png" alt="">
+        </a>
+    </div>
+
+    <nav>
+      <!-- <a href="DatosPersonales.html"><p>Datos Personales</p></a> 
+      <a href="Experiencia.html" ><p>Experience</p></a> 
+      <a href="softSkills.html" ><p>Soft Skills</p></a> 
+      <a href="hardSkills.html" ><p>Hard Skills</p></a> 
+      <a href="contactar.html" class="activeBarr"><p>Contact</p></a> -->
+  </nav>
+
+</header>
+    <main>
+      
+      <form action="" 
+      target="" method="POST" name="formDatosPersonales" id="myForm">
+        <h1>Envianos un mensaje</h1>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+      
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+      
+        <label for="email" />Email *</label>
+        <input type="email" name="email" id="email" placeholder="Email" pattern=".+@globex\.com" required />
+      
+        <label for="asunto">Candidata</label>
+        <input type ="text" name="asunto" id="asunto" placeholder="Titular de la consulta"/>
+                  
+        <p id="EquestionP">
+            <section id="Question"> ¿Quieres seguir conociendo a la candidata?</section>
+                   <div id="option">
+                    <input type="radio" name="hm" value="si"> Sí
+                    <input type="radio" name="hm" value="no"> No
+                    <input type="radio" name="hm" value="quizas"> Quizás
+                   </div> 
+            
+        </p>
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 1000 carácteres" maxlength="1000"></textarea>
+        <!-- <button onclick='SubForm()'>Submit</button> -->
+        <input type="submit" name="enviar" onclick='SubForm()' value="Enviar Respuesta"/>
+      </form>
+      
+        
+    </main>
+    <footer>
+        &copy; Derechos Reservados 2023
+    </footer>
+
+
+    <script>
+
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/dv4c3Fd7LYuCthNG/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+    <!-- <script src="js/CORE.js"></script>
+    <script src="js/MODEL.js"></script>
+    <script src="js/VIEW.js"></script> -->
+</body>
+
+</html>

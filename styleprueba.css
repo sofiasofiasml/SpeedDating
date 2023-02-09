@@ -1,0 +1,219 @@
+.flex-container {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #bfc7bf;
+    justify-content: space-between; /* could also try with space-around */
+    border-radius: 10px;
+
+  }
+  
+  .flex-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #ffffff;
+    height: calc(100% - 20px); /* for demonstration purposes, subtracts top and bottom margin from height */
+    margin: 10px; /* for demonstration purposes */
+    border-radius: 20px;
+  }
+  body{
+    font-family: 'Ubuntu', sans-serif !important;
+    background: #e0dede;
+  }
+
+  header
+  {
+    display: flex;
+  }
+  .home
+  {
+    background-color: #E4DCD1;
+
+  }
+  .home img{
+    height: 75px;
+    margin: 5px;
+    margin-left: 25px;
+  }
+
+  nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E4DCD1;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav a {
+    float: left;
+    border-right:1px solid #bbb;
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav a:hover:not(.active) {
+    background-color: #aca59b;
+  }
+  .activeBarr {
+    background-color: #ccc1b3;
+  }
+  #ImagenSofi
+  {
+    float: right;
+    margin: 10px;
+  }
+
+  #ImagenPresentacion{
+    width: 40%;
+    float: right;
+    padding: 50px;
+    transition: transform .2s;
+    margin: 5 auto;
+  }
+
+  .Descripcion
+  {
+    margin: 20px;
+    text-align: justify;
+  }
+
+  #homeMain
+  {
+    background-color: rgb(240, 239, 236);
+    height: 750px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+  }
+  #HomeWritte{
+    margin-top: 50px;
+  }
+  #FraseCitada
+  {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-style: italic !important;
+  }
+
+  .home-buttons
+  {
+    margin: 50px;
+  }
+
+  .home-buttons a
+  {
+    margin: 20px;
+    background-color: rgb(199, 195, 180);
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration:none;
+    color: black;
+  }
+  .home-buttons a:hover{
+    background-color: rgb(150, 149, 145);
+  }
+  #FormContainer
+  {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #ContainerHijo
+  {
+    background: #dad2c1;
+    height: 300px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  #ContainerHijo li {
+    list-style:none; 
+    
+  }
+
+  form{
+    width:300px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#ccc;
+    margin-top: 150px ;
+    margin-bottom: 150px ;
+  }
+  
+  form label{
+    width:72px;
+    font-weight:bold;
+    display:inline-block;
+  }
+  
+  form input[type="text"],
+  form input[type="email"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+  }
+  
+  form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+  } 
+  
+  form input[type="submit"]:hover{
+    cursor:pointer;
+  }
+  
+  textarea{
+    width:100%;
+    height:100px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;			
+    margin:8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize:none;
+    display:block;
+  }
+#Question
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input
+{
+    margin: 10px;
+}
+#option
+{
+    text-align: center;
+}
+
+  /* footer {
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
