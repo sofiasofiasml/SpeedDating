@@ -1,4 +1,3 @@
-
 .flex-container {
     display: flex;
     height: 100px;
@@ -20,13 +19,10 @@
     border-radius: 20px;
   }
   body{
+    font-family: 'Ubuntu', sans-serif !important;
     background: #e0dede;
   }
-*
-{
-  font-family: 'Ubuntu', sans-serif !important;
-  
-}
+
   header
   {
     display: flex;
@@ -37,7 +33,7 @@
 
   }
   .home img{
-    height: 75px ;
+    height: 75px;
     margin: 5px;
     margin-left: 25px;
   }
@@ -150,14 +146,13 @@ text-align: center;
   }
 
   form{
-    width:70%;
+    width:300px;
     padding:16px;
     border-radius:10px;
     margin:auto;
     background-color:#ccc;
     margin-top: 150px ;
     margin-bottom: 150px ;
-    height: 500px;
   }
   
   form label{
@@ -215,69 +210,6 @@ input
 #option
 {
     text-align: center;
-}
-@media (max-width: 1500px) {
-  *
-  {
-    font-size: 20px;
-  }
-}
-/* movil */
-
-
-@media (max-width: 1000px) {
-  * {
-    /* width: 758px; */
-    font-size: 40px;
-  }
-  form
-  {
-    height: 1200px ; 
-  }
-  form input[type="text"], form input[type="email"]
-  {
-   
-    width: 97%;
-  } 
-  .home img {
-    height: 150px;
-  }
-  textarea
-  {
-    height: 170px;
-  }
-  input[type="radio"] {
-
-    width: 1.15em;
-    height: 1.15em;
-    margin: 20px;
-    background-color: var(--form-background);
-    border: 0.15em solid currentColor;
-    color: currentColor;
-    accent-color: #232323;
-
-  }
-  
-  input[type="radio"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-    
-    background-color: CanvasText;
-  }
-  
-  input[type="radio"]:checked::before {
-    transform: scale(1);
-  }
-  
-  input[type="radio"]:focus {
-    outline: max(0px, 0.15em)  currentColor;
-    outline-offset: max(0px, 0.15em);
-  }
 }
 
   /* footer {
